@@ -375,6 +375,18 @@ a.active {
     outline: 0;
 }
 
+/* инструменты */
+
+.skill-icon {
+    text-align: center;
+    line-height: 100px;
+    /* высота блока */
+}
+
+.skill-icon img {
+    vertical-align: middle;
+}
+
 
 /*Navbar Logo Image*/
 
@@ -1164,25 +1176,25 @@ a.fa.fa-angle-down:focus {
 
 @media screen and (min-width: 450px) {
     .skills-section .skill-icon img#html {
-        width: 55px;
+        width: 70px;
     }
     .skills-section .skill-icon img#css {
-        width: 55px;
+        width: 70px;
     }
     .skills-section .skill-icon img#sass {
-        margin-top: 15px;
+        margin-top: 0px;
     }
     .skills-section .skill-icon img#js {
-        width: 55px;
+        width: 70px;
     }
     .skills-section .skill-icon img#node {
-        width: 100px;
+        width: 70px;
     }
 }
 
 @media screen and (min-width: 985px) {
-    .skills-section .skill-icon img#node {
-        margin-top: -10px;
+    .skills-section {
+        margin-top: 0px;
     }
 }
 
@@ -1494,6 +1506,42 @@ a.resume-btn:active {
     line-height: 45px;
     font-weight: 400;
     margin: 0;
+}
+
+/*Счетчик*/
+.start_block {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 18px 22px;
+}
+
+.num {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1;
+    min-width: 40px;
+    /* чтобы не прыгало при росте цифр */
+    text-align: right;
+    will-change: transform;
+}
+
+.plus {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2d3748;
+    user-select: none;
+    /* плюс статичен */
 }
 
 

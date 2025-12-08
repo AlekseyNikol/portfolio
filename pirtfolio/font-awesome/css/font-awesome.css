@@ -969,8 +969,20 @@
 .fa-terminal:before {
   content: "\f120";
 }
-.fa-code:before {
-  content: "\f121";
+.fa-file-text-o:before {
+  content: "\f0f6";
+}
+.fa-sitemap:before {
+  content: "\f0e8";
+}
+.fa-link:before {
+  content: "\f0c1";
+}
+.fa-cogs:before {
+  content: "\f085";
+}
+.fa-pie-chart:before {
+  content: "\f200";
 }
 .fa-mail-reply-all:before,
 .fa-reply-all:before {
