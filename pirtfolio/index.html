@@ -116,13 +116,14 @@
                         <h2>Что я умею</h2>
                         <div class="spacer-10"></div>
                         <div class="col-md-4 wp2">
-                            <div class="icon"><i class="fa fa-file-text-o"></i></div>
+                            <div class="icon" data-icon="semantic"><i class="fa fa-file-text-o"></i></div>
                             <h3>Семантика</h3>
-                            <p>Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can enjoy on all digital mediums.
-                            </p>
+                            <p>Профессиональный сбор и расширение семантического ядра с учётом поискового интента, коммерческих и информационных
+                            запросов.</p>
+                        
                         </div>
                         <div class="col-md-4 wp2">
-                            <div class="icon"><i class="fa fa-sitemap"></i></div>
+                            <div class="icon" ><i class="fa fa-sitemap"></i></div>
                             <h3>Навигация</h3>
                             <p>Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal
                                 functionality of a product as well as the overall user experience. I strive to design interfaces and experiences
@@ -155,6 +156,16 @@
                             <h3>аналитика</h3>
                             <p>At Northeastern, I'm currently the web chair for <a href="http://nuwit.ccs.neu.edu" target="_blank">nuWiT</a> (NU Women in Tech) as well as a Teaching Assistant for the undergrad HCI course. Previously, I've been involved with the club water polo team, the resident student association, and the ski and snowboard club.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ОБЩАЯ МОДАЛКА (ОДНА!) -->
+            <div class="modal-overlay" id="modalOverlay">
+                <div class="modal-window">
+                    <button class="modal-close" id="modalClose">&times;</button>
+            
+                    <div class="modal-content" id="modalContent">
+                        <!-- Сюда прилетает контент -->
                     </div>
                 </div>
             </div>
@@ -917,6 +928,7 @@
             <!-- container -->
         </footer>
         <script src="js/counter.js"></script>
+        <script src="js/modal-window.js"></script>
         <!-- Core JavaScript Files -->
         <script src="js/bootstrap.min.js"></script>
         <!-- jQuery -->

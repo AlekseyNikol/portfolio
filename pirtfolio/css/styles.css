@@ -91,6 +91,7 @@ button:focus,
         transform: rotate(0deg);
         /* Firefox 16+, IE 10+, Opera */
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         /* Chrome, Opera 15+, Safari 3.1+ */
@@ -110,6 +111,7 @@ button:focus,
         transform: rotate(0deg);
         /* Firefox 16+, IE 10+, Opera */
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         /* Chrome, Opera 15+, Safari 3.1+ */
@@ -213,6 +215,7 @@ h6 {
 }
 
 @media screen and (max-width: 500px) {
+
     h1,
     h2,
     h3,
@@ -335,7 +338,7 @@ a.active {
     font-weight: 300;
 }
 
-.nav > li {
+.nav>li {
     font-size: 13px;
 }
 
@@ -376,6 +379,10 @@ a.active {
 }
 
 /* инструменты */
+
+.icon {
+    cursor: pointer;
+}
 
 .skill-icon {
     text-align: center;
@@ -449,15 +456,20 @@ a.active {
     .container {
         width: 95%;
     }
+
+    .modal-window {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 818px) {
-    .nav > li > a {
+    .nav>li>a {
         padding: 15px 10px;
     }
 }
 
 @media (min-width: 768px) {
+
     /*.container {
       width: 900px;
     }*/
@@ -470,6 +482,7 @@ a.active {
         -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
+
     .navbar-custom.top-nav-collapse {
         padding: 0;
         background: #000;
@@ -563,6 +576,7 @@ a.active {
     .intro-content {
         padding: 30% 0 5% 0;
     }
+
     .navbar-toggle {
         padding: 0px 10px;
     }
@@ -572,6 +586,7 @@ a.active {
     .intro-content {
         padding: 45% 0 5% 0;
     }
+
     a.fa.fa-angle-down {
         margin-top: 80px !important;
     }
@@ -695,9 +710,11 @@ a.fa.fa-angle-down:focus {
     #about #tl-dr h3 {
         font-size: 16px;
     }
+
     #about #tl-dr h4 {
         font-size: 14px;
     }
+
     #about #tl-dr h5 {
         font-size: 12px;
     }
@@ -707,6 +724,7 @@ a.fa.fa-angle-down:focus {
     #about #tl-dr {
         padding: 30px 0;
     }
+
     #about #tl-dr h5 {
         font-size: 11px;
     }
@@ -716,12 +734,15 @@ a.fa.fa-angle-down:focus {
     #about {
         padding: 60px 10px;
     }
+
     #about #tl-dr h5 {
         /*font-size: 10px;*/
     }
+
     .tldr-icon {
         font-size: 30px;
     }
+
     #tldr-keyboard {
         font-size: 40px;
     }
@@ -731,12 +752,15 @@ a.fa.fa-angle-down:focus {
     #about img#prof-pic {
         width: 150px;
     }
+
     #about #tl-dr {
         width: 90%;
     }
+
     h2 {
         font-size: 22px;
     }
+
     .tlder-proc {
         width: 32%;
     }
@@ -748,12 +772,15 @@ a.fa.fa-angle-down:focus {
         height: 180px;
         width: 95%;
     }
+
     #about #tl-dr h4 {
         margin-bottom: 5px;
     }
+
     .tldr-icon {
         /*font-size: 24px;*/
     }
+
     #tldr-keyboard {
         font-size: 34px;
     }
@@ -815,9 +842,11 @@ a.fa.fa-angle-down:focus {
     #services {
         padding: 60px 10px;
     }
+
     #services h3 {
         margin-bottom: 20px;
     }
+
     #services p {
         font-size: 14px;
         max-width: 100%;
@@ -996,6 +1025,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 95%;
     }
@@ -1005,6 +1035,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 90%;
     }
@@ -1014,6 +1045,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 80%;
     }
@@ -1023,6 +1055,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 70%;
     }
@@ -1032,6 +1065,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 55%;
     }
@@ -1041,6 +1075,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 95%;
     }
@@ -1050,6 +1085,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 90%;
     }
@@ -1059,6 +1095,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 80%;
     }
@@ -1068,6 +1105,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 70%;
     }
@@ -1077,6 +1115,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 55%;
     }
@@ -1086,6 +1125,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 95%;
     }
@@ -1095,6 +1135,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 90%;
     }
@@ -1104,6 +1145,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 80%;
     }
@@ -1113,6 +1155,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 70%;
     }
@@ -1122,6 +1165,7 @@ a.fa.fa-angle-down:focus {
     0% {
         width: 0%;
     }
+
     100% {
         width: 55%;
     }
@@ -1178,15 +1222,19 @@ a.fa.fa-angle-down:focus {
     .skills-section .skill-icon img#html {
         width: 70px;
     }
+
     .skills-section .skill-icon img#css {
         width: 70px;
     }
+
     .skills-section .skill-icon img#sass {
         margin-top: 0px;
     }
+
     .skills-section .skill-icon img#js {
         width: 70px;
     }
+
     .skills-section .skill-icon img#node {
         width: 70px;
     }
@@ -1246,13 +1294,16 @@ img#nu-logo {
         width: 100%;
         min-width: 100px;
     }
+
     .employment h3 {
         font-size: 16px;
         margin-bottom: 0;
     }
+
     img#mullen-logo {
         width: 200px;
     }
+
     img#nu-logo {
         width: 150px;
     }
@@ -1262,14 +1313,17 @@ img#nu-logo {
     #experience {
         padding: 60px 0px;
     }
+
     #experience p {
         padding-bottom: 20px;
     }
+
     .skills,
     .employment {
         display: block;
         width: 100%;
     }
+
     img#nu-logo {
         width: 120px;
     }
@@ -1527,7 +1581,7 @@ a.resume-btn:active {
 }
 
 .num {
-    font-size: 38px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1;
     min-width: 40px;
@@ -1902,14 +1956,83 @@ ul.social-buttons li a:active {
     /*text-transform: uppercase;*/
 }
 
+/* Модальные Окна навыки */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+}
+
+/* Активное состояние */
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Модальное окно */
+.modal-window {
+    width: 90%;
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 8px;
+    border: 3px solid #3939b4;
+    background: #e0e0e0;
+    text-align: left;
+    position: relative;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal-content {
+    all: unset;
+}
+
+/* Анимация появления */
+.modal-overlay.active .modal-window {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Крестик */
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 480px) {
     #to-top {
         margin-top: 0px;
     }
+
     .copyright {
         padding-top: 0px;
         margin-top: 0px;
     }
+    .start_block {
+        width: 100%;
+        gap: 0px;
+    }
+    .num {
+        font-size: 8vw;
+    }
+    .num_text {
+        justify-content: center;
+        font-size: 3vw;
+    }
+    
 }
 
 
@@ -1948,10 +2071,6 @@ ul.social-buttons li a:active {
     color: #555;
 }
 
-.modal-content {
-    border-radius: 0px;
-}
-
 .modal-body img {
     margin: 0 auto;
 }
@@ -1963,6 +2082,14 @@ ul.social-buttons li a:active {
 @media (max-width: 340px) {
     .modal-body p {
         font-size: 14px;
+    }
+
+    .modal-description {
+        margin: 0;
+    }
+
+    .modal-window {
+        width: 95%;
     }
 }
 
@@ -1991,12 +2118,6 @@ ul.social-buttons li a:active {
 .modal-description {
     font-size: 15px;
     margin: 0px 25px;
-}
-
-@media (max-width: 340px) {
-    .modal-description {
-        margin: 0;
-    }
 }
 
 .modal-footer .btn {
