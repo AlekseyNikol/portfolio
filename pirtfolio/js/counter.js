@@ -80,3 +80,5 @@ console.log("counter.js загружен");
     initCounters();
   }
 })();
+
+
