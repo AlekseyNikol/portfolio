@@ -1,27 +1,32 @@
+const slider = document.querySelector('.slider');
 const slides = document.querySelector('.slides');
 const images = document.querySelectorAll('.slides img');
 const prevBtn = document.querySelector('.arrow-left');
 const nextBtn = document.querySelector('.arrow-right');
 const dotsContainer = document.querySelector('.dots');
 
-const slideWidth = 735 + 20;
-let index = 1; // Начинаем с первого «настоящего» слайда после клона
+let index = 1;
 let interval;
 
-// Клонирование первого и последнего слайдов
+/* =========================
+   КЛОНИРОВАНИЕ СЛАЙДОВ
+========================= */
 const firstClone = images[0].cloneNode(true);
 const lastClone = images[images.length - 1].cloneNode(true);
 
 slides.appendChild(firstClone);
 slides.insertBefore(lastClone, images[0]);
 
-// Обновляем список изображений после клонирования
 const allSlides = document.querySelectorAll('.slides img');
 
-// Устанавливаем стартовую позицию
-slides.style.transform = `translateX(${-slideWidth * index}px)`;
+/* =========================
+   СТАРТОВАЯ ПОЗИЦИЯ
+========================= */
+slides.style.transform = `translateX(-${index * 100}%)`;
 
-// Создание точек
+/* =========================
+   СОЗДАНИЕ ТОЧЕК
+========================= */
 images.forEach((_, i) => {
     const dot = document.createElement('div');
     dot.classList.add('dot');
@@ -29,7 +34,7 @@ images.forEach((_, i) => {
 
     dot.addEventListener('click', () => {
         stopAutoSlide();
-        index = i + 1; // +1 из-за клона в начале
+        index = i + 1; // +1 из-за клона
         updateSlider();
         startAutoSlide();
     });
@@ -39,19 +44,25 @@ images.forEach((_, i) => {
 
 const dots = document.querySelectorAll('.dot');
 
-// Обновление слайдера
+/* =========================
+   ОБНОВЛЕНИЕ СЛАЙДЕРА
+========================= */
 function updateSlider() {
     slides.style.transition = 'transform 0.5s ease-in-out';
-    slides.style.transform = `translateX(${-index * slideWidth}px)`;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+
     dots.forEach(dot => dot.classList.remove('active'));
-    // Активная точка учитывает клон
+
     let dotIndex = index - 1;
     if (dotIndex >= images.length) dotIndex = 0;
     if (dotIndex < 0) dotIndex = images.length - 1;
+
     dots[dotIndex].classList.add('active');
 }
 
-// Навигация
+/* =========================
+   НАВИГАЦИЯ
+========================= */
 function nextSlide() {
     index++;
     updateSlider();
@@ -62,30 +73,37 @@ function prevSlide() {
     updateSlider();
 }
 
-// Событие для «петли» после анимации
+/* =========================
+   БЕСКОНЕЧНАЯ ПЕТЛЯ
+========================= */
 slides.addEventListener('transitionend', () => {
-    if (allSlides[index].isSameNode(firstClone)) {
+    if (allSlides[index] === firstClone) {
         slides.style.transition = 'none';
         index = 1;
-        slides.style.transform = `translateX(${-index * slideWidth}px)`;
+        slides.style.transform = `translateX(-${index * 100}%)`;
     }
-    if (allSlides[index].isSameNode(lastClone)) {
+
+    if (allSlides[index] === lastClone) {
         slides.style.transition = 'none';
         index = images.length;
-        slides.style.transform = `translateX(${-index * slideWidth}px)`;
+        slides.style.transform = `translateX(-${index * 100}%)`;
     }
 });
 
-// Автопрокрутка
+/* =========================
+   АВТОПРОКРУТКА
+========================= */
 function startAutoSlide() {
-    interval = setInterval(nextSlide, 2000);
+    interval = setInterval(nextSlide, 3000);
 }
 
 function stopAutoSlide() {
     clearInterval(interval);
 }
 
-// Кнопки
+/* =========================
+   КНОПКИ
+========================= */
 nextBtn.addEventListener('click', () => {
     stopAutoSlide();
     nextSlide();
@@ -98,5 +116,8 @@ prevBtn.addEventListener('click', () => {
     startAutoSlide();
 });
 
-// Старт
+/* =========================
+   СТАРТ
+========================= */
 startAutoSlide();
+

@@ -2178,32 +2178,24 @@ body {
 }
 
 .slider {
-    width: 735px;
-    height: 405px;
-    margin: 0 auto 50px;
+    width: 100%;
+    max-width: 735px;
+    aspect-ratio: 735 / 405;
     overflow: hidden;
     position: relative;
+    margin: auto;
 }
 
 .slides {
     display: flex;
-    flex-direction: row;
-    /* 🔴 КРИТИЧНО */
     flex-wrap: nowrap;
-    /* 🔴 КРИТИЧНО */
-    align-items: center;
-    gap: 20px;
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
 }
 
 .slides img {
-    width: 735px;
-    /* 🔴 обязательно, не min-width */
-    height: 405px;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    flex-shrink: 0;
-    /* 🔴 запрещаем сжиматься */
     display: block;
 }
 
